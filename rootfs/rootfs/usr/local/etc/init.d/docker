@@ -5,7 +5,7 @@
 #import settings from profile (e.g. HTTP_PROXY, HTTPS_PROXY)
 test -f '/var/lib/boot2docker/profile' && . '/var/lib/boot2docker/profile'
 
-: ${DOCKER_HOST:='-H tcp://0.0.0.0:2375'}
+: ${DOCKER_HOST:='-H tcp://0.0.0.0:2376'}
 : ${DOCKER_TLS:="no"}
 : ${DOCKER_STORAGE:=auto}
 : ${DOCKER_DIR:=/var/lib/docker}
