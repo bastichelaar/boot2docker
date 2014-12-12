@@ -20,6 +20,8 @@ test -f '/var/lib/boot2docker/profile' && . '/var/lib/boot2docker/profile'
 : ${CERT:="${CERTDIR}cert.pem"}
 : ${KEY:="${CERTDIR}key.pem"}
 
+EXTRA_ARGS="$EXTRA_ARGS --auth=identity"
+
 start() {
     # Not enabling Docker daemon TLS by default.
     if [ "$DOCKER_TLS" != "no" ]; then
